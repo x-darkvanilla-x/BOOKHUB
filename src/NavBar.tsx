@@ -29,7 +29,9 @@ export default function NavBar() {
             component="div"
             sx={{ flexGrow: 1, fontWeight: "bolder" }}
           >
-            BOOKHUB
+            <Link style={{ textDecoration: "none",  color: currentPath === "/" ? "orange" : "inherit"  }} to={"/"}>
+              BOOKHUB
+            </Link>
           </Typography>
           <Stack gap={3} direction={"row"}>
           <Link style={{ fontWeight: "bolder", textDecoration: "none",  color: currentPath === "/" ? "orange" : "inherit"  }} to={"/"}>
