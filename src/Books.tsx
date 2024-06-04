@@ -59,7 +59,7 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
   };
 
   return (
-    <Stack padding={"70px 30px"} justifyContent={"center"}>
+    <Stack padding={isMobile?"70px 0px": "70px 30px"} justifyContent={"center"}>
       {loading ? (
         <Stack
           sx={{ width: "100%", minHeight: "50svh", alignItems: "center", justifyContent: "center" }}

@@ -40,7 +40,7 @@ const Bookmarks: React.FC = () => {
 
   return ( 
 
-    <Stack padding={"70px 30px"} justifyContent={"center"}>
+    <Stack padding={isMobile?"70px 0px": "70px 30px"} justifyContent={"center"}>
       <Stack sx={{ padding: "70px 30px" }} gap={3}>
         <Typography
           variant={isMobile ? "h5" : "h4"}
