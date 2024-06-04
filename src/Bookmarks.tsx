@@ -1,3 +1,5 @@
+{/* 
+
 import {Delete } from "@mui/icons-material";
 import {
   Box,
@@ -23,10 +25,14 @@ interface Book {
     language?: string[];
   }
 
+*/}
+
 const Bookmarks: React.FC = () => {
+    {/* 
   const isMobile = useMediaQuery("(max-width:600px)");
 
   const [bookmarks, setBookmarks] = useState<Book[]>([]);
+  
 
   useEffect(() => {
     const storedBookmarks = localStorage.getItem("bookmarks");
@@ -40,6 +46,10 @@ const Bookmarks: React.FC = () => {
     setBookmarks(updatedBookmarks);
     localStorage.setItem("bookmarks", JSON.stringify(updatedBookmarks));
   };
+  
+  */}
+
+
 
   return ( 
 <>
@@ -142,9 +152,9 @@ const Bookmarks: React.FC = () => {
 
       */}
 
-      <Stack justifyContent={"center"} alignItems={"center"}>
+      <div>
         This page will be ready soon...
-      </Stack>
+      </div>
       </>
   );
 };

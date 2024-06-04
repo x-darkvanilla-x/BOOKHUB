@@ -38,6 +38,8 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
   const [bookmarks, setBookmarks] = useState<Book[]>([]);
   const [cardindex, setCardindex] = useState<number>(0);
 
+  console.log(bookmarks);
+
   const isMobile = useMediaQuery("(max-width:600px)");
 
   useEffect(() => {
