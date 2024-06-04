@@ -92,7 +92,7 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
           {results.map((book) => (
             <Card
               sx={{
-                width: 200,
+                width: isMobile? 150 : 200,
                 height: "auto",
                 display: "flex",
                 flexDirection: "column",
