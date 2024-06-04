@@ -251,7 +251,7 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
                       <img
                         className="rotate"
                         src={
-                          book.cover_i
+                          book?.cover_i
                             ? `https://covers.openlibrary.org/b/id/${book.cover_i}.jpg`
                             : "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
                         }
@@ -260,7 +260,7 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
                           maxWidth: "100%",
                           transition: "1s",
                         }}
-                        alt={book.title}
+                        alt={book?.title}
                       />
                     </Box>
                     <Typography
@@ -271,11 +271,11 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
                         marginTop: 2,
                       }}
                     >
-                      {book.title}
+                      {book?.title}
                     </Typography>
                     <Typography variant="caption" sx={{ textAlign: "center" }}>
                       Author:{" "}
-                      {book.author_name
+                      {book?.author_name
                         ? book.author_name.join(", ")
                         : "Unknown"}
                     </Typography>
