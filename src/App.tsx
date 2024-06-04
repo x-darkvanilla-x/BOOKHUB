@@ -11,7 +11,7 @@ function App() {
   const [searchValue, setSearchValue] = useState('');
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100svh" }}>
       <Router>
         <NavBar />
         <Routes>
