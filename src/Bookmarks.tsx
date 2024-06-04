@@ -61,7 +61,7 @@ const Bookmarks: React.FC = () => {
             {bookmarks.map((book) => (
               <Card
                 sx={{
-                    width: isMobile? 150 : 200,
+                    width: isMobile? 170 : 200,
                   height: "auto",
                   display: "flex",
                   flexDirection: "column",
