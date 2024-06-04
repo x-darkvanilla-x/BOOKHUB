@@ -140,7 +140,7 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
                 Author : {results[cardindex].author_name}
               </Typography>
 
-              {results[cardindex].subject ? (
+              {results[cardindex].subject && (
                 <Stack direction={"row"} flexWrap={"wrap"} gap={2}>
                   {results[cardindex].subject.map((subject, index) => (
                     <Typography
@@ -154,8 +154,6 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
                     </Typography>
                   ))}
                 </Stack>
-              ) : (
-                <></>
               )}
 
               <Typography variant={isMobile ? "body1" : "h6"}>
