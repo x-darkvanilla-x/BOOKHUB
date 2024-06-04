@@ -140,7 +140,7 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
                 Author : {results[cardindex].author_name}
               </Typography>
 
-              {results[cardindex].subject && (
+              {results[cardindex] && results[cardindex].subject && (
                 <Stack direction={"row"} flexWrap={"wrap"} gap={2}>
                   {results[cardindex].subject.map((subject, index) => (
                     <Typography
