@@ -6,6 +6,7 @@ import {
   IconButton,
   Stack,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 
@@ -23,6 +24,8 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
   const [results, setResults] = useState<Book[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [bookmarks, setBookmarks] = useState<Book[]>([]);
+
+  const isMobile = useMediaQuery("(max-width:600px)");
 
   console.log(bookmarks);
 
@@ -60,7 +63,7 @@ const Books: React.FC<{ search: string }> = ({ search }) => {
       {loading ? (
         <Stack
           sx={{ width: "100%", minHeight: "50svh", alignItems: "center", justifyContent: "center" }}
-          direction={"row"}
+          direction={isMobile?"column" : "row"}
           gap={3}
         >
           <img
