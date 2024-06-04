@@ -11,14 +11,17 @@ import {
 import { useEffect, useState } from "react";
 
 interface Book {
-  key: string;
-  title: string;
-  author_name?: string[];
-  first_publish_year?: number;
-  publisher?: string[];
-  docs?: string[];
-  cover_i: number;
-}
+    key: string;
+    title: string;
+    author_name?: string[];
+    first_publish_year?: number;
+    publisher?: string[];
+    docs?: string[];
+    cover_i: number;
+    subject?: string[];
+    first_sentence?: string[];
+    language?: string[];
+  }
 
 const Bookmarks: React.FC = () => {
   const isMobile = useMediaQuery("(max-width:600px)");
@@ -39,9 +42,10 @@ const Bookmarks: React.FC = () => {
   };
 
   return ( 
-
+<>
+    {/* 
     <Stack padding={isMobile?"70px 0px": "70px 30px"} justifyContent={"center"}>
-      <Stack sx={{ padding: "70px 30px" }} gap={3}>
+      <Stack gap={3}>
         <Typography
           variant={isMobile ? "h5" : "h4"}
           sx={{ fontWeight: "700" }}
@@ -135,7 +139,13 @@ const Bookmarks: React.FC = () => {
         )}
       </Stack>
       </Stack>
-     
+
+      */}
+
+      <Stack justifyContent={"center"} alignItems={"center"}>
+        This page will be ready soon...
+      </Stack>
+      </>
   );
 };
 
